@@ -15,8 +15,8 @@
 
 # 你还可以在此添加一些初始化脚本或定制化操作
 # 比如创建特定的文件夹，或修改启动文件：
-mkdir -p package/base-files/files/etc/custom/
-echo "Custom Initialization Script" > package/base-files/files/etc/custom/init.sh
+# mkdir -p package/base-files/files/etc/custom/
+# echo "Custom Initialization Script" > package/base-files/files/etc/custom/init.sh
 
 # 设置执行权限
-chmod +x package/base-files/files/etc/custom/init.sh
+# chmod +x package/base-files/files/etc/custom/init.sh
