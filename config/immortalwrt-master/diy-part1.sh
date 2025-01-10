@@ -8,6 +8,9 @@
 # 修改默认主机名
 sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 
+# 修改默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+
 # 设置默认语言为简体中文
 sed -i 's/CONFIG_LANG="en"/CONFIG_LANG="zh_CN"/' .config
 
