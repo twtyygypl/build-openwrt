@@ -1,29 +1,22 @@
+# diy-part2.sh 脚本（用于安装包或修改文件）
+
+# diy-part2.sh 适用于一些更具体的定制，通常用于安装额外的包或修改配置文件。
+--------------------------------------------------------
 #!/bin/bash
-#========================================================================================================================
-# Description: Automatically Build OpenWrt
-# Function: Diy script (After Update feeds, Modify the default IP, hostname, theme, add/remove software packages, etc.)
-# Source code repository: https://github.com/immortalwrt/immortalwrt / Branch: master
-#========================================================================================================================
 
-# ------------------------------- Main source started -------------------------------
-#
-# Add the default password for the 'root' user（Change the empty password to 'password'）
-sed -i 's/root:::0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.::0:99999:7:::/g' package/base-files/files/etc/shadow
+# 添加一些额外的软件包
+# 可以直接在 diy-part2.sh 中手动安装
+# 比如安装某些你需要的插件：
+# ./scripts/feeds install luci-app-adblock
 
-# Set etc/openwrt_release
-sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package/base-files/files/etc/openwrt_release
-echo "DISTRIB_SOURCECODE='immortalwrt'" >>package/base-files/files/etc/openwrt_release
+# 如果你需要修改配置文件，可以通过这种方式
+# 修改默认的无线配置
+# sed -i 's/option disabled 1/option disabled 0/' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-# Modify default IP（FROM 192.168.1.1 CHANGE TO 192.168.31.4）
-# sed -i 's/192.168.1.1/192.168.3.94/g' package/base-files/files/bin/config_generate
-#
-# ------------------------------- Main source ends -------------------------------
+# 你还可以在此添加一些初始化脚本或定制化操作
+# 比如创建特定的文件夹，或修改启动文件：
+mkdir -p package/base-files/files/etc/custom/
+echo "Custom Initialization Script" > package/base-files/files/etc/custom/init.sh
 
-# ------------------------------- Other started -------------------------------
-
-# Apply patch
-# git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
-#
-# ------------------------------- Other ends -------------------------------
-# 修改主机名
-sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
+# 设置执行权限
+chmod +x package/base-files/files/etc/custom/init.sh
