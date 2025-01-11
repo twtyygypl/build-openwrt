@@ -13,15 +13,13 @@
 
 - immortalwrt源码： https://github.com/immortalwrt/immortalwrt
 
-### 操作教程由“实用技能”提供 @shiyongjineng
+### 操作教程由“实用技能”提供
 
-#### 观看视频教程↓↓点击下方↓↓进行观看！
+[从零开始：自己编译OpenWrt系统！一个视频就够了！](https://youtu.be/_3B-y73JRQ4)
 
-[[从零开始：自己编译OpenWrt系统！一个视频就够了！](https://youtu.be/_3B-y73JRQ4)
+[openwrt在线编译教程](https://www.youtube.com/watch?v=6j4ofS0GT38 )
 
-[[openwrt在线编译教程](https://www.youtube.com/watch?v=6j4ofS0GT38 )
-
-[[电视盒子专用：利用Flippy内核工具打包，将OpenWrt固件转成img镜像文件，](https://youtu.be/EPNsHRj3eXE)
+[电视盒子专用：利用Flippy内核工具打包，将OpenWrt固件转成img镜像文件，](https://youtu.be/EPNsHRj3eXE)
 
 
 ## 使用方法
