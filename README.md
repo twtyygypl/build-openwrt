@@ -13,14 +13,6 @@ GitHub推出的在线云编译服务(GitHub Action)提供高性能虚拟服务�
 
 - immortalwrt源码： https://github.com/immortalwrt/immortalwrt
 
-### 操作教程由“实用技能”提供
-
-[从零开始：自己编译OpenWrt系统！一个视频就够了！](https://youtu.be/_3B-y73JRQ4)
-
-[openwrt在线编译教程](https://www.youtube.com/watch?v=6j4ofS0GT38 )
-
-[电视盒子专用：利用Flippy内核工具打包，将OpenWrt固件转成img镜像文件，](https://youtu.be/EPNsHRj3eXE)
-
 
 ## 使用方法
 
@@ -62,3 +54,10 @@ GitHub推出的在线云编译服务(GitHub Action)提供高性能虚拟服务�
  由于时间仓促，修改可能不到位，后续慢慢补充！
 
   
+## 操作教程由“实用技能”提供
+
+[从零开始：自己编译OpenWrt系统！一个视频就够了！](https://youtu.be/_3B-y73JRQ4)
+
+[openwrt在线编译教程](https://www.youtube.com/watch?v=6j4ofS0GT38 )
+
+[电视盒子专用：利用Flippy内核工具打包，将OpenWrt固件转成img镜像文件，](https://youtu.be/EPNsHRj3eXE)
